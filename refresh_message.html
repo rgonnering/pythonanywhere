@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block content %}
+    <center>
+        <h1><p style="color:#ffffff">Let me refresh my knowledge!</p></h1>
+        <h2>
+         <table border="5px"; BORDERCOLOR="#FF00FF" width="40%" bgcolor="#FF8C00" style="color:#ffffff">
+            <tr>
+                <td width="40%">Verb Infinitive</td>
+                <td width="60%">{{ session['myword'][0] }}</td>
+            </tr>
+            <tr>
+                <td>Definition</td>
+                <td>{{ session['myword'][1] }}</td>
+            </tr>
+            <tr>
+                <td>Verb Tense</td>
+                <td>{{ session['tense'] }}</td>
+            </tr>
+        </table>
+        <br>
+        <table border="5px"; bordercolor="#FF00FF" width="40%" bgcolor="#FF8C00" style="color:#ffffff">
+            <tr>
+                <td>yo</td>
+                <td>{{ session['myword'][2] }}</td>
+            </tr>
+            <tr>
+                <td>tú</td>
+                <td>{{ session['myword'][3] }}</td>
+            </tr>
+            <tr>
+                <td>él/ella/Usted</td>
+                <td> {{ session['myword'][4] }} </td>
+            </tr>
+            <tr>
+                <td>nosotros</td>
+                <td> {{ session['myword'][5] }} </td>
+            </tr>
+            <tr>
+                <td>vosotros</td>
+                <td> {{ session['myword'][6] }} </td>
+            </tr>
+            <tr>
+                <td>ellos/ellas/Ustedes</td>
+                <td> {{ session['myword'][7] }} </td>
+            </tr>
+        </table>
+
+        <br>
+        <table width="40%">
+            <colgroup>
+                <col style="width: 50%" />
+                <col style="width: 50%" />
+            </colgroup>
+            <tr>
+                <td>
+                   <center><a href="{{ url_for('home') }}" style="color:#ff99ff">
+                        <button style="height:200%;font-size:100%">
+                            Go to HOME!</button></a></center>
+                </td>
+
+                <td>
+                    <center><a href="{{ url_for('message') }}" style="color:#ff99ff">
+                        <button style="height:200%;font-size:100%">
+                            Try Again!</button></a></center>
+                </td>
+            </tr>
+        </table>
+
+    </h2></center>
+{% endblock %}
