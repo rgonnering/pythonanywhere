@@ -10,6 +10,24 @@
 # http://rgonnering.pythonanywhere.com/
 
 """
+conjaGame_database.notes
+========================
+4/1/2106
+
+How to refresh the database:
+----------------------------
+A go to http://www.conjugation.org/
+    get words in list form
+Copy each word to the verbs.xlsx
+Copy all of verbs.xlsx
+Copy Special|Transpose to spanish_verbs.csv
+    spanish_verbs should be cleaned up with just verb data
+$ python verb_index.py
+Copy each tense to 
+    https://www.pythonanywhere.com/user/rgonnering/files/home/rgonnering/mysite/data.py?edit
+
+
+
 Instructions to change verb list
 --------------------------------
     Copy conjugated verbs to spreadsheet
